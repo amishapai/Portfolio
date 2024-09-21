@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
             +91 9535401872
           </a>
         </span>
-        <p className="text-gray-300"> That's it :))</p>
+        <p className="text-gray-300"> That's it!</p>
       </div>
     </footer>
   );
