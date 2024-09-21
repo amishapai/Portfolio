@@ -4,8 +4,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Krishnatejaswi S - Portfolio Website",
-  description: "LLMs made it, I debugged it, Vercel hosted it. 🚀",
+  title: "B. Amisha Pai - Portfolio Website"
 };
 
 export default function RootLayout({ children }) {

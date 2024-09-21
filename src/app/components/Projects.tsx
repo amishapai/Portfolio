@@ -15,68 +15,49 @@ interface ProjectData {
 const projectsData: ProjectData[] = [
   {
     id: 1,
-    name: "Portfolio-GPT",
+    name: "WIPOD-Dashboard",
     description:
-      "This is a portfolio website created using LLMs only. Allowed to iterate the design quickly.",
-    image: "/proj/website.png",
-    link: "https://github.com/KTS-o7/my-portfolio-website",
+      "India’s first-ever autonomous car initiative, a collaboration between Coding Club RVCE, WIPRO, and IISc. Project to build it's robust dashboard.",
+    image: "/proj/Wirin.png",
+    link: "https://github.com/AlroyYT/Car",
     tag: ["All", "Software"],
   },
   {
     id: 2,
-    name: "Better Bing Image Downloader",
+    name: "EcoSensor Connect",
     description:
-      "Python library to download images from Bing in bulk for Machine learning. 20+ Stars, Now availabe as a CLI tool.",
-    image: "/proj/bingScrape.png",
-    link: "https://github.com/KTS-o7/better_bing_image_downloader",
-    tag: ["All", "Software"],
+      "Created a portable air quality sensor using NodeMCU.Data is transferred to ThingSpeak for visualization and to MATLAB for trend analysis using machine learning algorithms.",
+    image: "/proj/Eco.png",
+    link: "https://github.com/amishapai/EcoSensorConnect",
+    tag: ["All", "Hardware"],
   },
   {
     id: 3,
-    name: "QuantQuips",
+    name: "Ink & Insights",
     description:
-      "Langchain based backtesting, algotrading and analytics. Appreciated by judges from JPMC.",
-    image: "/proj/Qq.png",
-    link: "https://github.com/KTS-o7/QuantQuips",
+      "A python ML model, that analyses NSO's literacy survery from 2012-2018 and predict the factors that affect literacy and predict the literacy rate in the upcoming years.",
+    image: "/proj/image.png",
+    link: "https://github.com/amishapai/InkAndInsights",
     tag: ["All", "Software"],
   },
   {
     id: 4,
-    name: "RV Board",
+    name: "Asclepius",
     description:
-      "Protyping Board for RVCE students using LPC2148 ARM7 microcontroller. Drivers developed in Assembly, Embedded C",
-    image: "/proj/rvboard.png",
-    link: "https://github.com/KTS-o7/RV_Board",
-    tag: ["All", "Hardware"],
+      "A website that uses a dataset of COVID cases to develop a risk factor for an individual who enters their personal health details and locality using machine learning algorithms for personalized results. Implemented data visualization techniques including heatmaps and graphs for enhanced analysis.",
+    image: "/proj/Aclepius.png",
+    link: "https://github.com/amishapai/Asclepius",
+    tag: ["All", "Software"],
   },
   {
     id: 5,
-    name: "Algorithmic-fusion-for-Lung-scan-classification",
+    name: "Zesha",
     description:
-      "Fusion of CNN algorithms for Multiple Lung Disease Classification.",
-    image: "/publication/cnn.png",
-    link: "https://github.com/KTS-o7/Algorithmic-fusion-for-Lung-scan-classification",
-    tag: ["All", "Publication"],
+      "An app that helps both Alzheimer’s patients and their caretakers by providing a digital caretaker. Its features include the ability to listen to and answer repetitive questions from users using Dialogflow, patient GPS tracking, helpful daily checklists, quick-dial emergency numbers, and links to entertainment sites to help patients cope with boredom.",
+    image: "/proj/Zesha.png",
+    link: "https://www.technovation.org/blogs/technovation-awards-winners-world-summit-2020/",
+    tag: ["All", "Software"],
   },
-  {
-    id: 6,
-    name: "HandWrittenTripSheet OCR",
-    description:
-      "OCR for handwritten TripSheet using EasyOCR and RegEx. Increased accuracy by 40%",
-    image: "/publication/ieeeTrip.png",
-    link: "https://ieeexplore.ieee.org/document/10170030",
-    tag: ["All", "Publication"],
-  },
-  {
-    id: 7,
-    name: "Evaluation of filters in CT and Xray images of Lungs classification",
-    description:
-      "A study on the effect of filters on the classification of CT and Xray images of Lungs.",
-    image: "/publication/q3.png",
-    link: "https://ijeecs.iaescore.com/index.php/IJEECS/article/view/34975/18055",
-    tag: ["All", "Publication"],
-  },
-  // Add more projects as needed
 ];
 
 const Projects: FC = () => {
@@ -106,8 +87,8 @@ const Projects: FC = () => {
           onClick={() => handleTagChange("All")}
           className={`px-3 py-2 rounded-md text-base font-lg lg:text-2xl ${
             tag === "All"
-              ? "text-black bg-yellow-500"
-              : "text-yellow-500 bg-black"
+              ? "text-black bg-pink-500"
+              : "text-pink-500 bg-black"
           }`}
         >
           All
@@ -116,8 +97,8 @@ const Projects: FC = () => {
           onClick={() => handleTagChange("Software")}
           className={`px-3 py-2 rounded-md text-base font-lg lg:text-2xl ${
             tag === "Software"
-              ? "text-black bg-yellow-500"
-              : "text-yellow-500 bg-black"
+              ? "text-black bg-pink-500"
+              : "text-pink-500 bg-black"
           }`}
         >
           Software
@@ -126,21 +107,11 @@ const Projects: FC = () => {
           onClick={() => handleTagChange("Hardware")}
           className={`px-3 py-2 rounded-md text-base font-lg lg:text-2xl ${
             tag === "Hardware"
-              ? "text-black bg-yellow-500"
-              : "text-yellow-500 bg-black"
+              ? "text-black bg-pink-500"
+              : "text-pink-500 bg-black"
           }`}
         >
           Hardware
-        </button>
-        <button
-          onClick={() => handleTagChange("Publication")}
-          className={`px-3 py-2 rounded-md text-base font-lg lg:text-2xl ${
-            tag === "Publication"
-              ? "text-black bg-yellow-500"
-              : "text-yellow-500 bg-black"
-          }`}
-        >
-          Publication
         </button>
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
@@ -162,7 +133,7 @@ const Projects: FC = () => {
                 //layout="full" // Maintains aspect ratio
               />
               <div className="p-6 bg-gray-800">
-                <h2 className="text-2xl font-bold mb-2 text-yellow-500">
+                <h2 className="text-2xl font-bold mb-2 text-pink-500">
                   {project.name}
                 </h2>
                 <p className="text-gray-300 text-lg lg:text-xl">
@@ -171,7 +142,7 @@ const Projects: FC = () => {
                 <div className="mt-4">
                   <a
                     href={project.link}
-                    className="text-yellow-500 hover:underline"
+                    className="text-pink-500 hover:underline"
                   >
                     Click Me to Explore !
                   </a>

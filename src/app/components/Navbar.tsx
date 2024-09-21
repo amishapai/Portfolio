@@ -25,10 +25,6 @@ const navLinks: NAVLINK[] = [
     title: "Contact",
     path: "#contact",
   },
-  {
-    title: "LinkTree",
-    path: "https://kts-o7.github.io/",
-  },
 ];
 
 const Navbar: FC = () => {
@@ -39,9 +35,9 @@ const Navbar: FC = () => {
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href={"/"}
-          className="text-2xl md:text-5xl text-yellow-500 font-semibold"
+          className="text-2xl md:text-5xl text-pink-500 font-semibold"
         >
-          KTS
+          
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
@@ -66,7 +62,7 @@ const Navbar: FC = () => {
               <li key={index}>
                 <a
                   href={link.path}
-                  className="text-white hover:bg-yellow-500 hover:text-black px-3 py-2 rounded-md text-md font-medium transition duration-300"
+                  className="text-white hover:bg-pink-500 hover:text-black px-3 py-2 rounded-md text-md font-medium transition duration-300"
                 >
                   {link.title}
                 </a>

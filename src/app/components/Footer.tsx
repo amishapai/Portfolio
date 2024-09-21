@@ -7,20 +7,20 @@ const Footer: React.FC = () => {
         <span>
           Contact Me<span className="mx-2"> </span>
           <a
-            href="mailto:krishna.tejaswi@shenthar.com"
-            className="text-yellow-500 hover:text-black hover:bg-yellow-500  px-1 py-1 rounded"
+            href="mailto:amisha.b.pai@gmail.com"
+            className="text-pink-500 hover:text-black hover:bg-pink-500  px-1 py-1 rounded"
           >
-            krishna.tejaswi@shenthar.com
+            amisha.b.pai@gmail.com
           </a>
           <span className="mx-2"> </span>
           <a
-            href="tel:+917760951918"
-            className="text-yellow-500 hover:text-black hover:bg-yellow-500  px-1 py-1 rounded"
+            href="tel:+919535401872"
+            className="text-pink-500 hover:text-black hover:bg-pink-500  px-1 py-1 rounded"
           >
-            +91 (776)095-1918
+            +91 9535401872
           </a>
         </span>
-        <p className="text-gray-300"> That&apos;s all folks!</p>
+        <p className="text-gray-300"> That's it :))</p>
       </div>
     </footer>
   );
